@@ -1,2 +1,5 @@
-# turtlepy
-Pythons Turtle-Modul erkunden
+# Turtle Python
+
+Programme und Tutorials, um [Pythons Turtle-Modul](http://cognitiones.kantel-chaos-team.de/programmierung/python/turtlepython.html) erkunden.
+
+Als Addendum soll auch das Paket [grphics.py](http://cognitiones.kantel-chaos-team.de/programmierung/python/graphicspy.html) von *John M. Zelle* berücksichtigt werden.
