@@ -8,7 +8,7 @@ Die Spielidee ist, daß die kleine rote Rakete durch das All fliegt und dabei di
 
 Getroffene Aliens und Kürbisse entstehen an zufällig gewählten Punkten in dem Spielefenster wieder neu, so daß Aliens und Kürbisse immer in gleicher Anzahl das Spiel bevölkern.
 
-Es waren tatsächlich nur wenige Veränderungen gegenüber der letzten Version notwendig. Wenn man einmal davon absieht, daß ich statt des NASA-Sternenhimmels ein anderes Hintergrundbild gewählt, das ich in den Tiefen des Netzes ausgegraben und mit der Bildverarbeitung meines Vertrauens in ein entsprechend großes GIF verwandelt hatte, brauchte ich natürlich erst einmal einen Torpedo, mit dem die kleine rote Rakete auf ihre Gegner schießen kann:
+Es waren tatsächlich nur wenige Veränderungen gegenüber der letzten Version notwendig. Wenn man einmal davon absieht, daß ich statt des NASA-Sternenhimmels ein anderes Hintergrundbild gewählt, das ich in den Tiefen des Netzes [ausgegraben](https://www.flickr.com/photos/taffeta/6128937880/) und mit der Bildverarbeitung meines Vertrauens in ein entsprechend großes GIF verwandelt hatte, brauchte ich natürlich erst einmal einen Torpedo, mit dem die kleine rote Rakete auf ihre Gegner schießen kann:
 
 ~~~python
 class Missile(Sprite):

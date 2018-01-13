@@ -43,16 +43,16 @@ for i in range(5000):
     alex.pencolor(colors[color])
     
     x_dir = r.choice([-1, 1])
-    # ohne Lévy-Fly
+    # ohne Lévy-Flight
     # x_dist = r.choice([0, 1, 2, 3])
-    # mit Lévy-Fly
+    # mit Lévy-Flight
     x_dist = r.choice([0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 10])
     new_x = x_dist*x_dir
     
     y_dir = r.choice([-1, 1])
-    # ohne Lévy-Fly
+    # ohne Lévy-Flight
     # y_dist = r.choice([0, 1, 2, 3])
-    # mit Lévy-Fly
+    # mit Lévy-Flight
     y_dist = r.choice([0, 1, 2, 3, 4, 0, 1, 2, 3, 4, 10])
     new_y = y_dist*y_dir
     
