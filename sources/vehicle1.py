@@ -39,7 +39,7 @@ class Vehicle(t.Turtle):
 wn = t.Screen()
 wn.setup(WIDTH, HEIGHT)
 wn.colormode(255)
-wn.bgcolor(50, 50, 50)
+wn.bgcolor(0, 0, 0)
 wn.title("Vehicle (1)")
 
 def exitWorld():
