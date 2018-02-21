@@ -28,4 +28,4 @@ while keepGoing:
         particles[i].update()
         if particles[i].isDead():
             particles.pop(i)
-            # print(len(particles))
+            print(len(particles))
