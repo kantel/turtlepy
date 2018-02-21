@@ -14,7 +14,6 @@ def exit_sim():
     global keepGoing
     keepGoing = False
 
-
 t.listen()
 t.onkey(exit_sim, "Escape") # Escape beendet die Simulation
 
