@@ -10,6 +10,9 @@ HEIGHT = 700
 
 # Initialisierung
 
+file_path = os.path.dirname(os.path.abspath(__file__))
+os.chdir(file_path)
+
 wn = t.Screen()
 wn.bgcolor("#000000")
 wn.setup(width = WIDTH, height = HEIGHT)

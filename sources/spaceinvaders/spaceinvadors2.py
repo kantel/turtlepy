@@ -152,11 +152,14 @@ class Invader(Sprite):
 
 # Initialisierung
 
+file_path = os.path.dirname(os.path.abspath(__file__))
+os.chdir(file_path)
+
 wn = t.Screen()
 wn.bgcolor("#000000")
 wn.setup(width = WIDTH, height = HEIGHT)
 wn.title("Space Invaders")
-ufo = os.path.join(os.getcwd(), "sources/spaceinvaders/ufo.gif")
+ufo = os.path.join(os.getcwd(), "ufo.gif")
 # ufo = "ufo.gif"
 wn.register_shape(ufo)
 
