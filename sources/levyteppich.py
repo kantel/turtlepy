@@ -22,7 +22,7 @@ def levy(deg, len):
         paul.left(90)
 
 paul.goto(125, 125)
-# wn.tracer(0)
+wn.tracer(0)
 paul.pendown()
 levy(12, 4)
 
@@ -37,7 +37,7 @@ levy(12, 4)
 paul.pencolor(255, 150, 100)
 paul.left(90)
 levy(12, 4)
-# wn.update()
+wn.update()
 
 print("I did it, Babe!")
 
