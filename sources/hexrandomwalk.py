@@ -11,7 +11,6 @@ hexi = t.Turtle()
 hexi.speed(0)
 hexi.pensize(2)
 
-
 for step in range(1000):
     if step < 200:
         hexi.pencolor(255, 255, 178)

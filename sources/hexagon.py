@@ -27,5 +27,6 @@ hexi.left(60)
 hexi.fd(100)
 hexi.left(60)
 
+print("I did it, Babe!")
 
 wn.mainloop()
