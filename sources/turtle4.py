@@ -3,7 +3,7 @@ import turtle as t
 wn = t.Screen()
 wn.bgcolor("green")
 wn.setup(width = 640, height = 400)
-wn.title("Alex, Berta, Chris und Doris")
+wn.title("Alex, Berta, Chris und Doris 🐢")
 
 alex = t.Turtle()
 alex.pencolor("black")
