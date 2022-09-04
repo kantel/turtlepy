@@ -1,7 +1,7 @@
 import turtle as t
 
 WIDTH = 400
-HEIGHT = 400
+HEIGHT = 420
 
 # Initialisierung
 wn = t.Screen()
@@ -37,10 +37,15 @@ def draw_tree(n):
     ftree.forward(n/6)
     ftree.backward(n)
 
+
+# Bildschirm-Refresh ausschalten
+wn.tracer(0)
 ftree.penup()
 ftree.setpos(20, -175)
 ftree.pendown()
-
 draw_tree(250)
+ftree.hideturtle()
+# Bildschirm-Refresh wieder einschalten
+wn.update()
 
 wn.mainloop()
