@@ -5,20 +5,21 @@
 import random, time
 import turtle as t
 
-WIDTH = 600
-HEIGHT = 600
+WIDTH = 650
+HEIGHT = 550
 
 # Initialisierung der Turtle
 wn = t.Screen()
 wn.colormode(255)
-wn.bgcolor(235, 215, 182)
-wn.setup(width = WIDTH, height = HEIGHT)
+wn.bgcolor(235, 215, 182)  # Packpapier
+wn.setup(width = WIDTH, height = HEIGHT, startx = 1400, starty = 50)
 wn.setworldcoordinates(0, 0, WIDTH, HEIGHT)
 wn.title("Fraktaler Baum nach Al Sweigart")
+wn.tracer(0)
 
 alice = t.Turtle()
 alice.speed(0)        # Höchstgeschwindigkeit
-# alice.hideturtle()
+alice.hideturtle()
 
 def draw_branch(start_position, direction, branch_length):
     if branch_length < 3:
@@ -34,35 +35,49 @@ def draw_branch(start_position, direction, branch_length):
     alice.pendown()
     # Zweigdicke ist 1/7 der Zweiglänge
     alice.pensize(max(branch_length/7.0, 1))
+    if alice.pensize() >= 9.5:
+        alice.pencolor(139, 69, 19)
+    elif alice.pensize() >= 8.5:
+        alice.pencolor(139, 115, 85)
+    elif alice.pensize() >= 7.0:
+        alice.pencolor(139, 134, 78)
+    elif alice.pensize() >= 5.5:
+        alice.pencolor(189, 183, 110)
+    elif alice.pensize() >= 4.0:
+        alice.pencolor(85, 107, 47)
+    elif alice.pensize() >= 2.5:
+        alice.pencolor(107, 142, 35)
+    else:
+        alice.pencolor(0, 100, 0)
     alice.forward(branch_length)
     
     # Speichere die Position am Ende des Zweigs
     end_position = alice.position()
-    left_direction = direction + left_angle
-    left_branch_length = branch_length - left_decrease
-    rigth_direction = direction - rigth_angle
-    right_branch_length = branch_length - right_decrease
+    left_direction = direction + random.randint(10, 30)
+    left_branch_length = branch_length - random.randint(8, 15)
+    right_direction = direction - random.randint(10, 30)
+    right_branch_length = branch_length - random.randint(8, 15)
     
     # Rekursion
     draw_branch(end_position, left_direction, left_branch_length)
     draw_branch(end_position, right_direction, right_branch_length)
     
-    # Hauptprogramm
-    seed = 250
-    while True:
-        # (Pseudo-) Zufallswerte für die Eigenschaften der Zweige
-        random.seed(seed)
-        left_angle     = random.randint(10,  30)
-        left_decrease  = random.randint( 8,  15)
-        rigth_angle    = random.randint(10,  30)
-        right_decrease = random.randint( 8,  15)
-        start_length   = random.randint(80, 120)
-        
-        # Ausgabe der Seed-Nummer
-        alice.clear()
-        alice.penup()
-        alice.goto(10, 10)
-        print(seed)
-        alice.write("Seed: %s" % (seed))
-
-# wn.mainloop()
+# Hauptprogramm
+iteration = 0
+while True:
+    # (Pseudo-) Zufallswert für die Startlänge des Stamms
+    start_length   = random.randint(85, 100)
+    
+    # Ausgabe der Seed-Nummer
+    alice.clear()
+    alice.penup()
+    alice.goto(10, 10)
+    alice.pencolor(45, 45, 45)
+    alice.write("Iteration No.: %s" % (iteration))
+    
+    # Zeichne den Baum
+    draw_branch((WIDTH//2, 10), 90, start_length)
+    wn.update()
+    time.sleep(2)
+    
+    iteration += 1
