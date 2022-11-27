@@ -9,8 +9,8 @@ HEIGHT = 600
 
 wn = t.Screen()
 wn.colormode(255)
-wn.bgcolor(54, 50, 80)
-wn.setup(width = WIDTH, height = HEIGHT)
+wn.bgcolor(54, 50, 80)                    # Hintergrundfarbe
+wn.setup(width = WIDTH, height = HEIGHT)  # Fenstergröße
 wn.title("Colorsys-Test")
 
 wn.colormode(1)
