@@ -11,20 +11,24 @@ wn.bgcolor("black")
 wn.title("In den Labyrinthen von Buchhaim – Stage 4")
 wn.setup(800, 600)
 wn.bgcolor("#2b3e50")
-wn.bgpic(os.path.join(os.getcwd(), "sources/roguelike/images/bground.gif"))
 
-wall_shape = os.path.join(os.getcwd(), "sources/roguelike/images/wall.gif")
-player_shape = os.path.join(os.getcwd(), "sources/roguelike/images/player.gif")
-gold1_shape = os.path.join(os.getcwd(), "sources/roguelike/images/gold1.gif")
-gold2_shape = os.path.join(os.getcwd(), "sources/roguelike/images/gold2.gif")
-gold3_shape = os.path.join(os.getcwd(), "sources/roguelike/images/gold3.gif")
-gold4_shape = os.path.join(os.getcwd(), "sources/roguelike/images/gold4.gif")
-gold5_shape = os.path.join(os.getcwd(), "sources/roguelike/images/gold5.gif")
-gold6_shape = os.path.join(os.getcwd(), "sources/roguelike/images/gold6.gif")
-orc_shape = os.path.join(os.getcwd(), "sources/roguelike/images/orc.gif")
-painkiller_shape = os.path.join(os.getcwd(), "sources/roguelike/images/painkiller.gif")
-reptileman_shape = os.path.join(os.getcwd(), "sources/roguelike/images/reptileman.gif")
-troll_shape = os.path.join(os.getcwd(), "sources/roguelike/images/troll.gif")
+DATAPATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                       "images")
+
+wn.bgpic(os.path.join(DATAPATH, "bground.gif"))
+
+wall_shape = os.path.join(DATAPATH, "wall.gif")
+player_shape = os.path.join(DATAPATH, "player.gif")
+gold1_shape = os.path.join(DATAPATH, "gold1.gif")
+gold2_shape = os.path.join(DATAPATH, "gold2.gif")
+gold3_shape = os.path.join(DATAPATH, "gold3.gif")
+gold4_shape = os.path.join(DATAPATH, "gold4.gif")
+gold5_shape = os.path.join(DATAPATH, "gold5.gif")
+gold6_shape = os.path.join(DATAPATH, "gold6.gif")
+orc_shape = os.path.join(DATAPATH, "orc.gif")
+painkiller_shape = os.path.join(DATAPATH, "painkiller.gif")
+reptileman_shape = os.path.join(DATAPATH, "reptileman.gif")
+troll_shape = os.path.join(DATAPATH, "troll.gif")
 
 shapes = [wall_shape, player_shape, gold1_shape, gold2_shape, gold3_shape,
           gold4_shape, gold5_shape, gold6_shape,
