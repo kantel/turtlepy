@@ -46,7 +46,7 @@ screen.bgcolor("#2b3e50")
 screen.tracer(0)
 
 DATAPATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                       "data")
+                       "ata")
 
 wall = os.path.join(DATAPATH, "wall1.gif")
 wizard = os.path.join(DATAPATH, "wizard.gif")
