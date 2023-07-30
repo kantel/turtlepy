@@ -73,6 +73,7 @@ cv.postscript(file = file_name + ".eps", width = WIDTH, height = HEIGHT)
 # p.getscreen().getcanvas().postscript(file = file_name + ".eps", width = WIDTH, height = HEIGHT)
 
 img = Image.open(file_name + ".eps")
+img.load(scale = 5)          # Bringt eine höhe Auflösung. Danke an Karsten W.
 img.save(file_name + ".png")
 
 print("I did it, Babe!")
