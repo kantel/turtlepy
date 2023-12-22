@@ -16,11 +16,13 @@ p.width(2)
 p.speed(0)
 p.hideturtle()
 
+# Dreieck
 # for i in range(300):
 #     p.color(pal[i%3])
 #     p.forward(i*1.5)
 #     p.right(121)
 
+# Quadrat
 for i in range(300):
     p.color(pal[i%4])
     p.forward(i*1.2)
