@@ -1,8 +1,7 @@
 import turtle as t
 import random as r
 
-WIDTH = 540
-HEIGHT = 640
+WIDTH, HEIGHT = 540, 640
 MIN_X = -WIDTH//2 + 10
 MAX_X = WIDTH//2 - 20
 MIN_Y = HEIGHT//2 - 10
