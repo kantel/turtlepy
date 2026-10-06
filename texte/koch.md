@@ -10,7 +10,7 @@ Man kann die Kurve anschaulich mittels eines iterativen Prozesses konstruieren Z
 
 Man kann eine näherungsweise Abbildung sowohl der Kochkurve wie auch der Schneeflocke sehr schön mit Pythons Turtle-Modul visualisieren (siehe obigen Screenshot):
 
-~~~python
+```python
 import turtle as t
 
 colors = [(150, 100, 255), (255, 100, 150), (150, 255, 100), (255, 150, 100)]
@@ -52,7 +52,7 @@ koch.pendown()
 schneeflocke(200, it)
 
 wn.mainloop()
-~~~
+```
 
 Die Kochkurve wird spätestems seit Mandelbrot zur Simulation von Küstenlinien herangezogen. Und so ist die Kochsche Schneeflocke oder Insel auch ein Beispiel für ein Fläche mit einem endlichen Flächeninhalt aber einer unendlich langen Begrenzug.
 
@@ -65,7 +65,6 @@ Die Kochsche Insel oder Schneeflocke ist im Gegensatz zur Kochkurve **nicht** se
 - Benoit B. Mandelbrot; *[Die fraktale Geometrie der Natur][a1]*, Basel (Birkhäuser) 1987, Seite 46-69
 
 - Ian Stewart: *[Das Rätsel der Schneeflocke -- Die Mathematik der Natur][a2]*, München (Spektrum) 2007
-
 
 [a1]: https://www.amazon.de/Die-fraktale-Geometrie-Natur-Mandelbrot/dp/303485028X/ref=as_li_ss_tl?ie=UTF8&qid=1510140874&sr=8-1&keywords=die+fraktale+geometrie+der+natur&dpID=415LbTNsq2L&preST=_SX198_BO1,204,203,200_QL40_&dpSrc=srch&linkCode=ll1&tag=derschockwell-21&linkId=b3ecdbcc3378c34db3cf7b84a175fbb4
 [a2]: https://www.amazon.de/Das-R%C3%A4tsel-Schneeflocke-Mathematik-Natur/dp/3827419344/ref=as_li_ss_tl?ie=UTF8&qid=1510345373&sr=8-1&keywords=das+r%C3%A4tsel+der+schneeflocke&dpID=51KRAkxPc%252BL&preST=_SX198_BO1,204,203,200_QL40_&dpSrc=srch&linkCode=ll1&tag=derschockwell-21&linkId=34ff8101966927dd043319d336e49da2
